@@ -44,6 +44,10 @@ body {
   gap: 20px;
 }
 
+.text-end {
+  text-align: end;
+}
+
 .input {
   width: 100%;
   padding: 10px;
@@ -61,4 +65,21 @@ label {
 input {
   flex: 1;
   padding: 8px;
+}
+
+@media (max-width: 1024px) {
+  .form {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .text-end {
+    text-align: start;
+  }
+
+  .xuong {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
